@@ -78,7 +78,7 @@ public class ChiTietSanPhamService implements iChiTietSP {
             pre.setInt(4, ctsp.getSoLuong());
             pre.setString(5, ctsp.getChatLieu());
             pre.setString(6, ctsp.getKichThuoc());
-             pre.setString(8, ctsp.getMauSac());
+            pre.setString(8, ctsp.getMauSac());
             pre.setInt(7, ctsp.getTrangThai());
            
 

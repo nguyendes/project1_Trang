@@ -70,16 +70,12 @@ public class CTSP extends javax.swing.JFrame {
         txtTen.setText(ctsp.getTenSP());
         txtGia.setText(String.valueOf(ctsp.getGia()));
         txtSL.setText(String.valueOf(ctsp.getSoLuong()));
-        cbbChatlieu.setSelectedIndex(cbbChatlieu.getSelectedItem().toString());
-        cbbKichThuoc.setSelectedIndex(cbbKichThuoc.getSelectedItem().toString());
-        cbbMauSac.setSelectedIndex(cbbMauSac.getSelectedItem().toString());
+        cbbChatlieu.setSelectedIndex(Integer.parseInt(cbbChatlieu.getSelectedItem().toString()));
+        cbbKichThuoc.setSelectedIndex(Integer.parseInt(cbbKichThuoc.getSelectedItem().toString()));
+        cbbMauSac.setSelectedIndex(Integer.parseInt(cbbMauSac.getSelectedItem().toString()));
+
          
-         if(rdoCon.isSelected()){
-            ct.setTrangThai(1);
-        }
-        if(rdoHet.isSelected()){
-            ct.setTrangThai(0);
-        }
+         
         
     }
         
@@ -93,7 +89,7 @@ public class CTSP extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        buttonGroup1 = new javax.swing.ButtonGroup();
+        TrangThai = new javax.swing.ButtonGroup();
         jScrollPane1 = new javax.swing.JScrollPane();
         tblSPCT = new javax.swing.JTable();
         lblMAct = new javax.swing.JLabel();
@@ -151,10 +147,10 @@ public class CTSP extends javax.swing.JFrame {
 
         cbbKichThuoc.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "XS", "S", "M", "L", "XL", "XXL" }));
 
-        buttonGroup1.add(rdoCon);
+        TrangThai.add(rdoCon);
         rdoCon.setText("Còn hàng");
 
-        buttonGroup1.add(rdoHet);
+        TrangThai.add(rdoHet);
         rdoHet.setText("Hết hàng");
 
         btnThem.setText("Thêm");
@@ -189,10 +185,9 @@ public class CTSP extends javax.swing.JFrame {
                     .addComponent(txtTen)
                     .addComponent(txtGia)
                     .addComponent(txtSL)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addComponent(cbbKichThuoc, javax.swing.GroupLayout.Alignment.LEADING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(cbbMauSac, javax.swing.GroupLayout.Alignment.LEADING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(cbbChatlieu, javax.swing.GroupLayout.Alignment.LEADING, 0, 104, Short.MAX_VALUE)))
+                    .addComponent(cbbKichThuoc, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(cbbMauSac, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(cbbChatlieu, 0, 104, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 138, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(btnThem)
@@ -247,7 +242,7 @@ public class CTSP extends javax.swing.JFrame {
                     .addComponent(lblTrangThai)
                     .addComponent(rdoCon)
                     .addComponent(rdoHet))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 6, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
@@ -291,10 +286,10 @@ public class CTSP extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.ButtonGroup TrangThai;
     private javax.swing.JButton btnSua;
     private javax.swing.JButton btnThem;
     private javax.swing.JButton btnnew;
-    private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JComboBox<String> cbbChatlieu;
     private javax.swing.JComboBox<String> cbbKichThuoc;
     private javax.swing.JComboBox<String> cbbMauSac;

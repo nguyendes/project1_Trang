@@ -8,13 +8,21 @@ package exceptions;
  *
  * @author maytinh
  */
-public class cauhinhexception extends RuntimeException {
-    public cauhinhexception(String message) {
+public class CauHinhException extends RuntimeException {
+    public CauHinhException(String message) {
         super(message);
     }
 
-    public cauhinhexception(String message, Throwable cause) {
+    public CauHinhException(String message, Throwable cause) {
         super(message, cause);
+    }
+
+    public CauHinhException(Throwable cause) {
+        super(cause);
+    }
+
+    public static CauHinhException configurationNotFound(String configName) {
+        return new CauHinhException("Configuration not found: " + configName);
     }
 }
 

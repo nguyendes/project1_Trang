@@ -2,7 +2,7 @@
 
 <Form version="1.5" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
   <NonVisualComponents>
-    <Component class="javax.swing.ButtonGroup" name="buttonGroup1">
+    <Component class="javax.swing.ButtonGroup" name="TrangThai">
     </Component>
   </NonVisualComponents>
   <Properties>
@@ -125,7 +125,7 @@
                   <Component id="rdoCon" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="rdoHet" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="6" max="32767" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
               <Component id="jScrollPane1" min="-2" pref="141" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
@@ -306,7 +306,7 @@
     <Component class="javax.swing.JRadioButton" name="rdoCon">
       <Properties>
         <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-          <ComponentRef name="buttonGroup1"/>
+          <ComponentRef name="TrangThai"/>
         </Property>
         <Property name="text" type="java.lang.String" value="C&#xf2;n h&#xe0;ng"/>
       </Properties>
@@ -314,7 +314,7 @@
     <Component class="javax.swing.JRadioButton" name="rdoHet">
       <Properties>
         <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-          <ComponentRef name="buttonGroup1"/>
+          <ComponentRef name="TrangThai"/>
         </Property>
         <Property name="text" type="java.lang.String" value="H&#x1ebf;t h&#xe0;ng"/>
       </Properties>
